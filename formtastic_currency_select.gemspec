@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "formtastic_currency_select.gemspec",
      "lib/formtastic_currency_select.rb"
   ]
   s.homepage = %q{http://github.com/liangzan/formtastic_currency_select}

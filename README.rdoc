@@ -1,17 +1,24 @@
 = formtastic_currency_select
 
-Description goes here.
+Formtastic Currency Selects adds the :currency input type in formtastic form builder
 
-== Note on Patches/Pull Requests
+== Installation
+
+First install install the currency_select plugin http://github.com/gavinlaking/currency_select
+
+then,
+
+   $ gem install formtastic_currency_select
+
+== Usage
+   
+   # below is in haml, should translate to erb easily 
+   - semantic_form_for @ticket, :url => event_tickets_path(@event), :html => {:method => :post} do |f|
+
+     - f.inputs :name => "Ticket" do
+       = f.input :price, :label => 'Price'
+       = f.input :currency, :label => 'Currency', :as => :currency, :input_html => "foo", :priority_currencies => ["Euro", "US Dollar"]
  
-* Fork the project.
-* Make your feature addition or bug fix.
-* Add tests for it. This is important so I don't break it in a
-  future version unintentionally.
-* Commit, do not mess with rakefile, version, or history.
-  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
-* Send me a pull request. Bonus points for topic branches.
-
 == Copyright
 
 Copyright (c) 2010 Wong Liang Zan. See LICENSE for details.

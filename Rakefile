@@ -5,12 +5,13 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "formtastic_currency_select"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Integrates currency_select plugin into formtastic}
+    gem.description = %Q{Allows you to add a currency select field in formtastic}
     gem.email = "zan@liangzan.net"
     gem.homepage = "http://github.com/liangzan/formtastic_currency_select"
     gem.authors = ["Wong Liang Zan"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
+    gem.add_dependency "formtastic", ">= 0.9.7"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new

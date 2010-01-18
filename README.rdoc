@@ -1,6 +1,8 @@
 = formtastic_currency_select
 
-Formtastic Currency Selects adds the :currency input type in formtastic form builder
+Formtastic Currency Selects is now merged into formtastic. It'll be available at the next release of formtastic (versions > 0.9.7). 
+
+The gem adds the :currency input type in formtastic form builder
 
 == Installation
 
